@@ -45,10 +45,16 @@ public class Stairs {
 
     public int climbStairsCount(int n, int count[]){
 
-        if (count[n] > 0) return count[n];
-        if (n == 1) count[n] = 1;
-        else if (n == 2) count[n] = 2;
-        else count[n] = climbStairsCount(n-1,count)+climbStairsCount(n-2,count);
+        if (count[n] > 0) {
+            return count[n];
+        }
+        if (n == 1) {
+            count[n] = 1;
+        } else if (n == 2) {
+            count[n] = 2;
+        } else {
+            count[n] = climbStairsCount(n-1,count)+climbStairsCount(n-2,count);
+        }
 
         return count[n];
     }

@@ -1,9 +1,7 @@
-package com.algorithm.symmetrictree;
+package com.algorithm.tree.symmetrictree;
 
-import com.algorithm.treetraversal.TreeNode;
+import com.algorithm.tree.treetraversal.TreeNode;
 
-import java.util.LinkedList;
-import java.util.Queue;
 
 /**
  * @Version: 1.0
@@ -16,7 +14,9 @@ import java.util.Queue;
 public class Symmetric {
     public boolean isSymmetric(TreeNode root){
 
-        if (root == null) return true;
+        if (root == null) {
+            return true;
+        }
         return subtree(root.left,root.right);
 
 
@@ -51,10 +51,14 @@ public class Symmetric {
      * @param right
      * @return
      */
-    public boolean subtree(TreeNode left,TreeNode right){
+    public boolean subtree(TreeNode left, TreeNode right){
 
-        if (left == null && right == null) return true;
-        if (left ==null || right == null || left.val != right.val) return false;
+        if (left == null && right == null) {
+            return true;
+        }
+        if (left ==null || right == null || left.val != right.val) {
+            return false;
+        }
 
         return subtree(left.left,right.right) && subtree(left.right,right.left);
     }

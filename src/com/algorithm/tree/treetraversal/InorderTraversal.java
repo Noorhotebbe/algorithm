@@ -1,4 +1,5 @@
-package com.algorithm.treetraversal;
+package com.algorithm.tree.treetraversal;
+
 
 import java.util.ArrayList;
 import java.util.List;

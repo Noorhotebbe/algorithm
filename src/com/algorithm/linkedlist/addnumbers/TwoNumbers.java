@@ -1,4 +1,4 @@
-package com.algorithm.addnumbers;
+package com.algorithm.linkedlist.addnumbers;
 
 /**
  * @Version: 1.0
@@ -10,7 +10,7 @@ package com.algorithm.addnumbers;
  *          请你将两个数相加，并以相同形式返回一个表示和的链表。你可以假设除了数字 0 之外，这两个数都不会以 0开头。
  */
 public class TwoNumbers {
-    public ListNode twoAddNums(ListNode l1,ListNode l2){
+    public ListNode twoAddNums(ListNode l1, ListNode l2){
 
         ListNode resList = new ListNode(0);
         //变量保存进位

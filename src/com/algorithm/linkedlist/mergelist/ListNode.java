@@ -1,4 +1,4 @@
-package com.algorithm.mergelist;
+package com.algorithm.linkedlist.mergelist;
 
 /**
  * @Version: 1.0

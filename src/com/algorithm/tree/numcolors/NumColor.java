@@ -1,4 +1,4 @@
-package com.algorithm.numcolors;
+package com.algorithm.tree.numcolors;
 
 import java.util.HashSet;
 import java.util.Set;

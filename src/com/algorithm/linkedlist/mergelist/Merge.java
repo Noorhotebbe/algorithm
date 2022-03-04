@@ -1,4 +1,4 @@
-package com.algorithm.mergelist;
+package com.algorithm.linkedlist.mergelist;
 
 /**
  * @Version: 1.0
@@ -9,7 +9,7 @@ package com.algorithm.mergelist;
  *          将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
  */
 public class Merge {
-    public static ListNode mergeTwoList(ListNode list1,ListNode list2){
+    public static ListNode mergeTwoList(ListNode list1, ListNode list2){
 
 //        ListNode prehead = new ListNode(-1);
 //        ListNode temp  = prehead;

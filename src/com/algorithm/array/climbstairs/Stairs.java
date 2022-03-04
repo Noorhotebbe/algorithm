@@ -1,4 +1,4 @@
-package com.algorithm.climbstairs;
+package com.algorithm.array.climbstairs;
 
 /**
  * @Version: 1.0

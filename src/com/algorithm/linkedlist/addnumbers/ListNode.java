@@ -1,4 +1,4 @@
-package com.algorithm.addnumbers;
+package com.algorithm.linkedlist.addnumbers;
 
 /**
  * @Version: 1.0

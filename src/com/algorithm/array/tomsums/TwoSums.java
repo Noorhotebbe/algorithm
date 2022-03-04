@@ -1,4 +1,4 @@
-package com.algorithm.twosums;
+package com.algorithm.array.tomsums;
 
 import java.util.Arrays;
 import java.util.HashMap;

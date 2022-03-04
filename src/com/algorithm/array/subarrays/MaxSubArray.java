@@ -1,4 +1,4 @@
-package com.algorithm.subarrays;
+package com.algorithm.array.subarrays;
 
 /**
  * @Version: 1.0

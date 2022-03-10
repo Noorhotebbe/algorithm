@@ -39,6 +39,17 @@ public class IntersectingLinkedList {
         }
 
         ListNode hA = headA, hB = headB;
+
+        /*
+        链表长度相等时：
+            当两个链表长度相等且不相交时，遍历一次都为null即会返回，
+            相交且交点前长度相等时，也只会遍历一次遇到交点就返回。
+
+        链表长度不同时：
+            链表长度不同且不相交时，会遍历两次链表都为null返回，
+            相交时，也会遍历两次链表直到遇到交点返回。
+         */
+
         while (hA != hB){
             hA = hA == null ? headB : hA.next;
             hB = hB == null ? headA : hB.next;

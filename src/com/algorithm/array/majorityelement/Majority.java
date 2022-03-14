@@ -1,10 +1,5 @@
 package com.algorithm.array.majorityelement;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 /**
  * @Version: 1.0
@@ -24,9 +19,9 @@ public class Majority {
 
         int result = nums[0], count = 1;
         for (int num : nums) {
-            if (num == result){
+            if (num == result) {
                 count++;
-            }else if (--count == 0 ){
+            } else if (--count == 0) {
                 result = num;
                 count = 1;
             }

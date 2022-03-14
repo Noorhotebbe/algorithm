@@ -18,9 +18,6 @@ import java.util.stream.Collectors;
 public class Majority {
     public int element(int[] nums) throws Exception {
 
-        Map<Integer, Long> map = Arrays.stream(nums).boxed().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-
-
         if (nums.length == 0) {
             throw new Exception("数组不允许为空");
         }

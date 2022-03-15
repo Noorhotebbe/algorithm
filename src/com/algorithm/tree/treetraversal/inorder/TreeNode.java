@@ -1,4 +1,4 @@
-package com.algorithm.tree.treetraversal;
+package com.algorithm.tree.treetraversal.inorder;
 
 /**
  * @Version: 1.0

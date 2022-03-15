@@ -1,18 +1,16 @@
 package com.algorithm.tree.binarytreedepth;
 
-import com.algorithm.tree.treetraversal.TreeNode;
+import com.algorithm.tree.treetraversal.inorder.TreeNode;
 
-import java.util.LinkedList;
 
 /**
  * @Version: 1.0
  * @Author: alice
  * @Date: 2022-03-02 10:19
- * @Description:
- *      二叉树的深度：
- *          给定一个二叉树，找出其最大深度。
- *          二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。
- *          说明: 叶子节点是指没有子节点的节点。
+ * @Description: 二叉树的深度：
+ * 给定一个二叉树，找出其最大深度。
+ * 二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。
+ * 说明: 叶子节点是指没有子节点的节点。
  */
 public class BinaryTree {
 

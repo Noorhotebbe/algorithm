@@ -1,6 +1,6 @@
 package com.algorithm.tree.symmetrictree;
 
-import com.algorithm.tree.treetraversal.TreeNode;
+import com.algorithm.tree.treetraversal.inorder.TreeNode;
 
 
 /**

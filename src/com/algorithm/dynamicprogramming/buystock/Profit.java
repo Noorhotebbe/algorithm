@@ -1,4 +1,4 @@
-package com.algorithm.array.buystock;
+package com.algorithm.dynamicprogramming.buystock;
 
 
 /**
@@ -19,11 +19,10 @@ public class Profit {
 
         //min:最低买入值，max：最大利润
         int min = prices[0], max = 0;
-        for (int i = 1; i < prices.length; i++) {
-            max = Math.max(max, prices[i] - min);
-            min = Math.min(min, prices[i]);
+        for (int price : prices) {
+            max = Math.max(max, price - min);
+            min = Math.min(min, price);
         }
         return max;
-
     }
 }

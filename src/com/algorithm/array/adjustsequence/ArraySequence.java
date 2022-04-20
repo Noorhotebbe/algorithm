@@ -1,8 +1,6 @@
 package com.algorithm.array.adjustsequence;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * @Version: 1.0
@@ -17,6 +15,7 @@ public class ArraySequence {
 
         int left = 0, right = nums.length - 1;
 
+        //双指针解
         while (left < right){
             if (nums[left] % 2 != 0){
                 left++;
@@ -31,6 +30,7 @@ public class ArraySequence {
 
         return nums;
 
+        //笨比解法
         /*if (nums.length == 0) {
             return new int[0];
         }

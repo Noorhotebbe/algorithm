@@ -2,7 +2,6 @@ package com.algorithm.linkedlist.delete;
 
 import com.algorithm.linkedlist.reverselinkedlist.ListNode;
 
-import java.util.LinkedList;
 
 /**
  * @Version: 1.0

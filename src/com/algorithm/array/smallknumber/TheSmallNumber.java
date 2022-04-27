@@ -17,6 +17,8 @@ public class TheSmallNumber {
             return new int[0];
         }
 
+        if (k >= arr.length) return arr;
+
         /*int[] res = new int[n];
         Arrays.sort(arr);
         for (int i = 0; i < n; i++) {
@@ -61,8 +63,9 @@ public class TheSmallNumber {
     }
 
     public static void main(String[] args) {
-        int[] arr = {2, 6, 321, 7, 32, 63, 2, 9};
-        int[] leastNumbers = new TheSmallNumber().getLeastNumbers(arr, 5);
+
+        int[] arr = {0,0,1,2,4,2,2,3,1,4};
+        int[] leastNumbers = new TheSmallNumber().getLeastNumbers(arr, 10);
         System.out.println(Arrays.toString(leastNumbers));
     }
 }

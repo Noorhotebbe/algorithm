@@ -1,7 +1,7 @@
 package com.algorithm.array.smallknumber;
 
 
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * @Version: 1.0
@@ -52,7 +52,40 @@ public class TheSmallNumber {
         if (k < i) quickSort(arr, left, i - 1, k);
         if (k > i) quickSort(arr, i + 1, right, k);
 
+
         return Arrays.copyOf(arr, k);
+
+    }
+
+    /**
+     * 大根堆（默认小根堆）
+     *
+     * @param arr
+     * @param k
+     * @return
+     */
+    public int[] quick(int[] arr, int k) {
+
+        if (arr.length == 0 || k == 0) {
+            return new int[0];
+        }
+
+        PriorityQueue<Integer> queue = new PriorityQueue<>((c1, c2) -> c2 - c1);
+        for (int num : arr) {
+            if (queue.size() < k) {
+                queue.offer(num);
+            } else if (num < queue.peek()) {
+                queue.poll();
+                queue.offer(num);
+            }
+        }
+
+        int[] res = new int[queue.size()];
+        for (int i = queue.size() - 1; i >= 0; i--) {
+            res[i] = queue.poll();
+        }
+
+        return res;
     }
 
     private void swap(int[] arr, int i, int j) {
@@ -64,8 +97,11 @@ public class TheSmallNumber {
 
     public static void main(String[] args) {
 
-        int[] arr = {0,0,1,2,4,2,2,3,1,4};
-        int[] leastNumbers = new TheSmallNumber().getLeastNumbers(arr, 10);
-        System.out.println(Arrays.toString(leastNumbers));
+        int[] arr = {0, 0, 1, 2, 4, 2, 2, 3, 1, 4};
+//        int[] leastNumbers = new TheSmallNumber().getLeastNumbers(arr, 6);
+//        System.out.println(Arrays.toString(leastNumbers));
+
+        int[] quick = new TheSmallNumber().quick(arr, 8);
+        System.out.println(Arrays.toString(quick));
     }
 }

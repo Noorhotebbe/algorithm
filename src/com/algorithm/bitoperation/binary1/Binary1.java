@@ -1,4 +1,4 @@
-package com.algorithm.bitoperation;
+package com.algorithm.bitoperation.binary1;
 
 
 /**

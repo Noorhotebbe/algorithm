@@ -1,4 +1,4 @@
-package com.algorithm.array.climbstairs;
+package com.algorithm.dynamicprogramming.climbstairs;
 
 /**
  * @Version: 1.0

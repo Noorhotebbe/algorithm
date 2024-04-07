@@ -12,7 +12,7 @@
 
 .gitignore
 
-.idea
+#.idea
 
 algorithm.iml
 
